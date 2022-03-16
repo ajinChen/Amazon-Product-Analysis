@@ -48,7 +48,8 @@ We analyzed our dataset through 4 different perspectives. In order to analyze th
 In this part, we analyzed click rating and helpful rating. Helpful rate is defined as the number of helpful review divided by total number of review and click rate is how likely user will click the rating for item.
 We loaded data using paired-RDD and used `.cache` to persist our data into memory so that we can speed up the proccessing time. By using `groupByKey`,`map` and `count` functions, we aggrated our data and transformed data into useful insights.  
 
-<img src="pictures/helpful_vs_click.png" width="250" ><img src="pictures/helpful_for_each_cat.png" width="250" align="justify"> 
+<img src="pictures/helpful_vs_click.png" width="350" ><img src="pictures/helpful_for_each_cat.png" width="350" align="justify">  
+
 These plot shows that: 
 * The decrease of the helpful rate and click rate. It means that people unlikely to click their votes. 
 * since helpful rate is decreasing, people think most of review is unhelpful. The reason of sudden decrease of click rate in 2012 is because the number of review decrease sharply at this time.
