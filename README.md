@@ -2,7 +2,7 @@
 ## Intro
 <img src="pictures/amazondigital.png" width="350" align="right">
 
-This is a project to analyze Amazon's digital product from different perspectives. Our team members are *Zhipeng Hong*(zhong5@usfca.edu), *Wei He*, *Kaihang Zhao*(), *Jih-Chin Chen*(). This project was done during the University of San Francisco MSDS 2021 fall module.
+This is a project to analyze Amazon's digital product from different perspectives. Our team members are *Zhipeng Hong*(zhong5@usfca.edu), *Wei He*(whe13@usfca.edu), *Kaihang Zhao*(kzhao24@usfca.edu), *Jih-Chin Chen*(). This project was done during the University of San Francisco MSDS 2021 fall module.
 
 <img src="pictures/EMR.png" width="350" align="right"> In this project, we built pipeline to access data from **AWS S3** and processed data in **AWS EMR**. Then we used **Spark RDD** to analyze **Amazon Digital Products Review** from different dimension. We used 5 instances m5.xlarge in EMR to process our raw data which supported us proccess data more faster.
 
@@ -28,7 +28,7 @@ Our original data have
 |`helpful_votes`|Numeric|Number of helpful votes.|
 |`total_votes`|Numeric|Number of total votes the review received.|
 |`vine`|Boolean|Review was written as part of the Vine program.|
-|`verified_purchase`|Boolearn|The review is on a verified purchase.|
+|`verified_purchase`|Boolean|The review is on a verified purchase.|
 |`review_headline`|Text|The title of the review.|
 |`review_body`|Text|The review text.|
 |`review_date`|Text|The date the review was written.|
@@ -45,7 +45,9 @@ We analyzed our dataset through 4 different perspectives. In order to analyze th
 ## Review Count and Star Rating Analysis
 ...
 ## Ratio Analysis
-...
+In this part, we analyzed click rating and helpful rating. Helpful rate is defined as the number of helpful review divided by total number of review and click rate is how likely user will click the rating for item.
+We loaded data using paired-RDD and used `.cache` to persist our data into memory so that we can speed up the proccessing time. By using `groupByKey`,`map` and `count` functions, we aggrated our data and transformed data into useful insights.
+
 ## Review Analysis
 ...
 
