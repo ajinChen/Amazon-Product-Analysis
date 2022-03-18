@@ -68,6 +68,53 @@ These plots show that:
 
 ## Review Analysis
 ...
+In this part, we analyzed the review content of Amazon product users since review is a cirtical part to understand the users' bahavior and pattern. We adapted some `NLP` technologies, including `parsing`, `tokenization`, `stemming` and sentiment analysis.
+
+These are partial codes of calculating sentiment scores by review content:
+```python
+def tokenize(text: str):
+    """
+    Tokenize text and return a non-unique list of tokenized words
+    found in the text. Normalize to lowercase, strip punctuation,
+    remove stop words, drop words of length < 3, strip digits.
+    :param text: raw text
+    :param n: need to longer than n word
+    :return: a list of token word filter by stopwords
+    """
+    text = text.lower()
+    regex = re.compile(r'[' + string.punctuation + '0-9\r\t\n]')
+    nopunct = regex.sub(" ", text)
+    words = nopunct.split(" ")
+    good_words = [w for w in words if len(w) > 2 if w not in ENGLISH_STOP_WORDS] 
+    return good_words
+
+
+def neg_pos_score(article):
+    """
+    :param text: a list of dict including article's feature (title, text)
+    :return: add sentiment intensity score in range [-1, 1]
+    """
+    return SIA.polarity_scores(text=article)['compound']
+    
+rdd_score = rdd.map(lambda x: (x[6], x[13][:400])).map(lambda x: (x[0], [neg_pos_score(x[1])]))
+rdd_score = rdd_score.reduceByKey(reduce_func).map(sum_func)
+``` 
+
+In the fisrt plot, we displayed the average review length of review across different categories.
+<img src="pictures/Avg_review_length_cat.png" width="350" >
+This plot show that: 
+* People who purchase digital ebook are more likely to share their review on product.
+* People who purchase digital video are less likely to share their review.
+
+In the second plot, we showed that the average review length of review across different years.
+<img src="pictures/Avg_review_length_year.png" width="350" >  
+This plot show that: 
+* There is a obviously decrease trend in this plot after 2011.
+
+In the third plot, we focus on the average sentimental score of review across different categories.
+<img src="pictures/Sentimental_score.png" width="350" >  
+This plot show that: 
+* There is a perfect match between the distribution of sentimental score of review and the distribution of star rating on product. (the number above the bar is star rating)
 
 
 
