@@ -100,20 +100,23 @@ rdd_score = rdd_score.reduceByKey(reduce_func).map(sum_func)
 ``` 
 
 In the fisrt plot, we displayed the average review length of review across different categories.
-<img src="pictures/Avg_review_length_cat.png" width="350" >
+
+<img src="pictures/Avg_review_length_cat.png" width="400" >
 
 This plot show that: 
 * People who purchase digital ebook are more likely to share their review on product.
 * People who purchase digital video are less likely to share their review.
 
 In the second plot, we showed that the average review length of review across different years.
-<img src="pictures/Avg_review_length_year.png" width="350" >  
+
+<img src="pictures/Avg_review_length_year.png" width="400" >  
 
 This plot show that: 
 * There is a obviously decrease trend in this plot after 2011.
 
 In the third plot, we focus on the average sentimental score of review across different categories.
-<img src="pictures/Sentimental_score.png" width="350" >  
+
+<img src="pictures/Sentimental_score.png" width="400" >  
 
 This plot show that: 
 * There is a perfect match between the distribution of sentimental score of review and the distribution of star rating on product. (the number above the bar is star rating)
