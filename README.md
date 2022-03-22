@@ -44,8 +44,14 @@ We analyzed our dataset through 4 different perspectives. In order to analyze th
 
 ## Review Count and Star Rating Analysis
 ### Star Rating Analysis
+
+From review count, we found people are becoming less concentrated on the review. We can analysis this phenomenon from another perspective, which is focusing on the relationship between star rating and review count. Below are the two plots regarding percentage of each star rating and the trend of review count with star rating increasing.
+
 <img src="pictures/Wei_He_3.png" width="350" > <img src="pictures/Wei_He_4.png" width="350" > 
-From review count, we found people are becoming less concentrated on the review. We can analysis this phenomenon from another perspective. Here, from the pie chart on the left, we can see over 80% percent of reviews gave the star rating of 4 or 5. But on the right bar chart we can see, on average there was only 0.76 to 0.79 helpful vote for star rating of 4 and 5. And with the decreasing of the star rating, the average helpful vote became higher. It means, people are more caring about the review which told us the weakness or short comes of the products.
+
+These plots show that: 
+* Over 80% percent of reviews gave the star rating of 4 or 5. B
+* On average there was only 0.76 to 0.79 helpful vote for star rating of 4 and 5. And with the decreasing of the star rating, the average helpful vote became higher. It means, people are more caring about the review which told us the weakness or short comes of the products.
 
 ## Ratio Analysis
 
