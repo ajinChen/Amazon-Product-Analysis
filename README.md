@@ -47,7 +47,7 @@ We analyzed our dataset through 4 different perspectives. In order to analyze th
 
 From review count, we found people are becoming less concentrated on the review. We can analysis this phenomenon from another perspective, which is focusing on the relationship between star rating and review count. Below are the two plots regarding percentage of each star rating and the trend of review count with star rating increasing.
 
-<img src="pictures/Wei_He_3.png" width="350" > <img src="pictures/Wei_He_4.png" width="450" > 
+<img src="pictures/Wei_He_3.png" width="400" > <img src="pictures/Wei_He_4.png" width="450" > 
 
 These plots show that: 
 * Over 80% percent of reviews gave the star rating of 4 or 5. 
