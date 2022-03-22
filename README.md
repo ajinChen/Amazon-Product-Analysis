@@ -43,7 +43,10 @@ Our original data have
 We analyzed our dataset through 4 different perspectives. In order to analyze the review context, we also implemented sentimental analysis. Then we used `Plotly` a visualization tool to plot our graphs.
 
 ## Review Count and Star Rating Analysis
-...
+
+<img src="pictures/Wei_He_3.png" width="350" > <img src="pictures/Wei_He_4.png" width="350" > 
+People are becoming less concentrated on the review. We can analysis this phenomenon from another perspective. Here, from the pie chart on the right, we can see over 80% percent of reviews gave the star rating of 4 or 5. But on the left bar chart we can see, on average there was only 0.76 to 0.79 helpful vote for star rating of 4 and 5. And with the decreasing of the star rating, the average helpful vote became higher. It means, people are more caring about the review which told us the weakness or short comes of the products.![image](https://user-images.githubusercontent.com/87439219/159584406-b20adb6c-483f-433d-a356-0b65d39d71ab.png)
+
 ## Ratio Analysis
 
 In this part, we analyzed click rating and helpful rating. Helpful rate is defined as the number of helpful reviews divided by the total number of reviews and click rate is how likely the user will click the rating for the item.
