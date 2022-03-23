@@ -44,6 +44,14 @@ We analyzed our dataset through 4 different perspectives. In order to analyze th
 
 ## Review Count and Star Rating Analysis
 ### Star Rating Analysis
+We firstly observed the univariate star rating across time and category respectively. The sharp change of star rating from 2006 to 2008 is caused by small amount of data. With exponential growth afterwards, star rating is around 4 to 4.5 in each category.
+
+<img src="pictures/rating_for_category.png" width="400" > 
+
+In category level, music category has highest rating and software has the lowest.
+
+<img src="pictures/avg_rating.png" width="400" > 
+
 
 From review count, we found people are becoming less concentrated on the review. We can analysis this phenomenon from another perspective, which is focusing on the relationship between star rating and review count. Below are the two plots regarding percentage of each star rating and the trend of review count with star rating increasing.
 
@@ -73,7 +81,10 @@ These plots show that:
 * since the helpful rate is decreasing, people think most of the review is unhelpful. The reason for the sudden decrease in click rate in 2012 is that the number of a review decrease sharply at this time.
 
 
+## Review Count Analysis
+By plotting review count across different categories, it is interesting to see a boom of Ebook review in around 2012 and after 2013, Video Downloads relevant reviews took over the main trend after 2013.
 
+<img src="pictures/Kaihang_ZHAO_1.png" width="400" >
 
 ## Review Analysis
 In this part, we analyzed the review content of Amazon product users since review is a cirtical part to understand the users' bahavior and pattern. We adapted some `NLP` technologies, including `parsing`, `tokenization`, `stemming` and `sentiment analysis`.
