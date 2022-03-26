@@ -55,7 +55,7 @@ In category level, music category has highest rating and software has the lowest
 
 From review count, we found people are becoming less concentrated on the review. We can analysis this phenomenon from another perspective, which is focusing on the relationship between star rating and review count. Below are the two plots regarding percentage of each star rating and the trend of review count with star rating increasing.
 
-<img src="pictures/Wei_He_3.png" width="400" >  <img src="pictures/Wei_He_4.png" width="450" > 
+<img src="pictures/Wei_He_3.png" width="400" >  <img src="pictures/Wei_He_4.png" width="400" > 
 
 These plots show that: 
 * Over 80% percent of reviews gave the star rating of 4 or 5. 
@@ -74,7 +74,9 @@ helpful_rate_countbykey=helpful_rate.sortByKey().countByKey()
 helpful_rate=helpful_rate.groupByKey().mapValues(lambda x:mean(x)).sortByKey()
 ``` 
 
-<img src="pictures/helpful_vs_click.png" width="350" ><img src="pictures/helpful_for_each_cat.png" width="350" align="justify">  
+<img src="pictures/helpful_vs_click.png" width="400" >
+
+<img src="pictures/helpful_for_each_cat.png" width="400" align="justify">  
 
 These plots show that: 
 * The decrease of the helpful rate and click rate. It means that people are unlikely to click their votes. 
