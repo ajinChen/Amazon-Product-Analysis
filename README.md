@@ -55,7 +55,7 @@ In category level, music category has highest rating and software has the lowest
 
 From review count, we found people are becoming less concentrated on the review. We can analysis this phenomenon from another perspective, which is focusing on the relationship between star rating and review count. Below are the two plots regarding percentage of each star rating and the trend of review count with star rating increasing.
 
-<img src="pictures/Wei_He_4.png" width="400" > 
+<img src="pictures/Wei_He_3.png" width="400" >  <img src="pictures/Wei_He_4.png" width="450" > 
 
 These plots show that: 
 * Over 80% percent of reviews gave the star rating of 4 or 5. 
